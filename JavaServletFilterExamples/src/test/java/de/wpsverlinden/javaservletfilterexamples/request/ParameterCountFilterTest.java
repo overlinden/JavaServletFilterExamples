@@ -53,7 +53,7 @@ public class ParameterCountFilterTest {
     }
     
     @Test
-    public void filterDeclinesLesserThenMinimumParameters() throws IOException, ServletException {
+    public void filterDeclinesLesserThanMinimumParameters() throws IOException, ServletException {
         when(httpServletRequest.getParameterNames()).thenReturn(Collections.enumeration(Collections.EMPTY_LIST));
         
         filter.doFilter(httpServletRequest, httpServletResponse, filterChain);
@@ -62,7 +62,7 @@ public class ParameterCountFilterTest {
     }
     
     @Test
-    public void filterDeclinesMoreThenMaximumParameters() throws IOException, ServletException {
+    public void filterDeclinesMoreThanMaximumParameters() throws IOException, ServletException {
         when(httpServletRequest.getParameterNames()).thenReturn(Collections.enumeration(Arrays.asList("ont", "two", "three")));
         
         filter.doFilter(httpServletRequest, httpServletResponse, filterChain);
