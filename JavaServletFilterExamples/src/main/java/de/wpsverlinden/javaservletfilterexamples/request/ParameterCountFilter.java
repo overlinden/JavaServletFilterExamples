@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  * ...
  * <filter>
  *      <filter-name>ParameterCountFilter</filter-name>
- *      <filter-class>de.wpsverlinden.javaservletfilterexamples.request.ParameterCountFilterTest</filter-class>
+ *      <filter-class>de.wpsverlinden.javaservletfilterexamples.request.ParameterCountFilter</filter-class>
  *      <init-param>
  *          <param-name>min</param-name>
  *          <param-value>1</param-value>
