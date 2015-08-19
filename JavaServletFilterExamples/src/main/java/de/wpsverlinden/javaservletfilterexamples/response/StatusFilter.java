@@ -48,9 +48,6 @@ public class StatusFilter implements Filter {
         if (!allowed.contains(String.valueOf(res.getStatus()))) {
             res.sendError(HttpServletResponse.SC_FORBIDDEN, "Response dropped because of not allowed status code '" + res.getStatus() + "'");
         }
-        else {
-            
-        }
     }
 
     @Override
